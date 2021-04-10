@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+   <script type="text/javascript">
+   
+   // Declaring variables
+   var FirstValue;
+   var SecondValue;
+   var answer;
+  
+   // Function to get values of input numbers...
+   function getvalues()
+   {
+   FirstValue = Number(document.getElementById("first_number").value);
+   SecondValue = Number(document.getElementById("second_number").value);
+   }
+
+   // A function that add input values
+   function add()
+   {
+       getvalues();
+       answer = FirstValue+SecondValue;
+       alert("The sum is "+answer);
+   }
+   // A function that subtract input values
+   function subtract()
+   {
+       getvalues();
+       answer = FirstValue- SecondValue;
+       alert("The difference is  "+answer);
+   }
+   // A function that multiply input values
+      function times()
+   {
+       getvalues();
+       answer = FirstValue*SecondValue;
+       alert("The operation is "+answer);
+   }
+      // A function that divide input values
+   function divide()
+   {
+       getvalues();
+       answer = SecondValue/SecondValue;
+       alert("The quotient is  "+answer);
+   }
+   </script>
+
+</head>
+<body>
+  <div style=" padding-right: 400px; border-style: double; padding-left: 400px;">
+
+
+   <h1 style="font: sans-serif; font-size: 30px;">A JAVASCRIPT CALCULATOR</h1> <br/><br/>
+     <p>This is a simple javascript calculator</p> 
+      <p>Type in your numbers to perform simple mathematical operations...</p><hr/>
+
+        <label for="first_number"> First Value:</label>
+        <input id="first_number" type="text"/> <br/> <br/>
+        <label for="second_number"> Second Value:</label>
+        <input id="second_number" type="text"/> <br/><hr/>
+
+        <input type="button" onclick="add()" value="add"/> <hr/>
+        <input type="button" onclick="subtract()" value="subtract"/><hr/>
+        <input type="button" onclick="times()" value="times"/><hr/>
+        <input type="button" onclick="divide()" value="division"/><hr/>
+ </div>
+</body>
+
+</html>
